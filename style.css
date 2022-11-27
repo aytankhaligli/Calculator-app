@@ -134,8 +134,7 @@ input:focus {
   font-size: 3.2rem;
   border-radius: 9px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    hsl(28, 16%, 65%) 0px -3px 0px inset;
+  box-shadow: hsl(28, 16%, 65%) 0px -3px 0px inset;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -146,8 +145,7 @@ input:focus {
 .reset {
   background-color: hsl(225, 21%, 49%);
   color: var(--white);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    hsl(224, 28%, 35%) 0px -3px 0px inset;
+  box-shadow: hsl(224, 28%, 35%) 0px -3px 0px inset;
   text-transform: uppercase;
 }
 .delete:hover,
@@ -162,8 +160,7 @@ input:focus {
   background-color: hsl(6, 63%, 50%);
   color: var(--white);
   grid-column: -3/-1;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    hsl(6, 70%, 34%) 0px -3px 0px inset;
+  box-shadow: hsl(6, 70%, 34%) 0px -3px 0px inset;
 }
 .equal:hover {
   background-color: hsl(6, 63%, 60%);

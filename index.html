@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="header">
+        <p class="calc">calc</p>
+        <div class="theme">
+          <div class="numbers">
+            <p class="theme1">1</p>
+            <p class="theme2">2</p>
+            <p class="theme3">3</p>
+          </div>
+          <p class="theme-text">theme</p>
+          <div class="slider">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <input type="text" readonly placeholder="0" class="screenNum" />
+      </div>
+      <div class="keyboard">
+        <div class="key number" data-key="7">7</div>
+        <div class="key number" data-key="8">8</div>
+        <div class="key number" data-key="9">9</div>
+        <div class="key delete" data-key="d">del</div>
+        <div class="key number" data-key="4">4</div>
+        <div class="key number" data-key="5">5</div>
+        <div class="key number" data-key="6">6</div>
+        <div class="key plus" data-key="+">+</div>
+        <div class="key number" data-key="1">1</div>
+        <div class="key number" data-key="2">2</div>
+        <div class="key number" data-key="3">3</div>
+        <div class="key minus" data-key="-">-</div>
+        <div class="key comma" data-key=",">.</div>
+        <div class="key number" data-key="0">0</div>
+        <div class="key divide" data-key="/">/</div>
+        <div class="key multiple" data-key="*">x</div>
+        <div class="key reset" data-key="r">reset</div>
+        <div class="key equal" data-key="=">=</div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aytan Khaligli</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

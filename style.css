@@ -1,0 +1,286 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  /* (main background) */
+  --very-dark-desaturated-blue: hsl(222, 26%, 31%);
+  /* (toggle background, keypad background) */
+  --very-dark-desaturated-blue: hsl(223, 31%, 20%);
+  /* (screen background) */
+  --very-dark-desaturated-blue: hsl(224, 36%, 15%);
+
+  /* (key background) */
+  --desaturated-dark-blue: hsl(225, 21%, 49%);
+  /* (key shadow) */
+  --desaturated-dark-blue: hsl(224, 28%, 35%);
+  /* (key background, toggle) */
+  --red: hsl(6, 63%, 50%);
+  /* (key shadow) */
+  --dark-red: hsl(6, 70%, 34%);
+  /* (key background) */
+  --light-grayish-orange: hsl(30, 25%, 89%);
+  /* (key shadow) */
+  --grayish-orange: hsl(28, 16%, 65%);
+
+  /* text */
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(222, 26%, 31%);
+}
+.container {
+  margin: 10rem auto;
+  max-width: 54rem;
+  padding: 2.4rem;
+  color: var(--white);
+}
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.calc {
+  font-size: 3.2rem;
+}
+.theme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.8rem;
+  row-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+.theme-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.numbers {
+  font-size: 1.2rem;
+  grid-column: 2;
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+.slider {
+  background-color: hsl(223, 31%, 20%);
+  height: 2rem;
+  width: 7rem;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.circle {
+  background-color: hsl(6, 63%, 50%);
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: hsl(6, 63%, 60%);
+}
+.screen input {
+  width: 100%;
+  padding: 3.6rem 3rem;
+  margin-top: 3.6rem;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 9px;
+  border: none;
+  font-family: inherit;
+  font-size: 3.2rem;
+  color: var(--white);
+  text-align: end;
+}
+input:focus {
+  outline: none;
+}
+
+.keyboard {
+  width: 100%;
+  margin-top: 2.4rem;
+  border-radius: 9px;
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  padding: 3rem;
+}
+.key {
+  padding: 1.6rem;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  font-size: 3.2rem;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    hsl(28, 16%, 65%) 0px -3px 0px inset;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.key:hover {
+  background-color: var(--white);
+}
+.delete,
+.reset {
+  background-color: hsl(225, 21%, 49%);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    hsl(224, 28%, 35%) 0px -3px 0px inset;
+  text-transform: uppercase;
+}
+.delete:hover,
+.reset:hover {
+  background-color: hsl(225, 21%, 60%);
+}
+.reset {
+  grid-column: -5/-3;
+}
+
+.equal {
+  background-color: hsl(6, 63%, 50%);
+  color: var(--white);
+  grid-column: -3/-1;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    hsl(6, 70%, 34%) 0px -3px 0px inset;
+}
+.equal:hover {
+  background-color: hsl(6, 63%, 60%);
+}
+
+/* Theme-2 */
+
+body.theme-2 {
+  background-color: hsl(0, 0%, 90%);
+}
+body.theme-2 .header {
+  color: hsl(60, 10%, 19%);
+}
+body.theme-2 .slider {
+  background-color: hsl(0, 5%, 81%);
+}
+body.theme-2 .circle {
+  background-color: hsl(25, 98%, 40%);
+}
+body.theme-2 .circle:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+body.theme-2 .screen input {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+body.theme-2 .keyboard {
+  background-color: hsl(0, 5%, 81%);
+}
+body.theme-2 .key {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: hsl(35, 11%, 61%) 0px -3px 0px inset;
+}
+body.theme-2 .key:hover {
+  background-color: var(--white);
+}
+body.theme-2 .delete,
+body.theme-2 .reset {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: hsl(185, 58%, 25%) 0px -3px 0px inset;
+}
+body.theme-2 .delete:hover,
+body.theme-2 .reset:hover {
+  background-color: hsl(185, 42%, 50%);
+}
+body.theme-2 .equal {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: hsl(25, 99%, 27%) 0px -3px 0px inset;
+}
+body.theme-2 .equal:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+
+/* Theme-3 */
+
+body.theme-3 {
+  background-color: hsl(268, 75%, 9%);
+}
+body.theme-3 .header {
+  color: hsl(52, 100%, 62%);
+}
+body.theme-3 .slider {
+  background-color: hsl(268, 71%, 12%);
+}
+body.theme-3 .circle {
+  background-color: hsl(176, 100%, 44%);
+}
+body.theme-3 .circle:hover {
+  background-color: hsl(176, 100%, 50%);
+}
+body.theme-3 .screen input {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+body.theme-3 .screen input::placeholder {
+  color: hsl(268, 47%, 21%);
+}
+body.theme-3 .keyboard {
+  background-color: hsl(268, 71%, 12%);
+}
+body.theme-3 .key {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: hsl(290, 70%, 36%) 0px -3px 0px inset;
+  color: hsl(52, 100%, 62%);
+}
+body.theme-3 .key:hover {
+  background-color: hsl(268, 47%, 30%);
+}
+body.theme-3 .delete,
+body.theme-3 .reset {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: hsl(285, 91%, 52%) 0px -3px 0px inset;
+  color: var(--white);
+}
+body.theme-3 .delete:hover,
+body.theme-3 .reset:hover {
+  background-color: hsl(281, 89%, 35%);
+}
+body.theme-3 .equal {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: hsl(177, 92%, 70%) 0px -3px 0px inset;
+  color: hsl(198, 20%, 13%);
+}
+body.theme-3 .equal:hover {
+  background-color: hsl(176, 100%, 50%);
+}
+
+@media (max-width: 33em) {
+  .keyboard {
+    gap: 1.2rem;
+    padding: 2rem;
+  }
+  .key {
+    padding: 2rem 0;
+  }
+  .delete,
+  .reset {
+    font-size: 2.4rem;
+  }
+}
